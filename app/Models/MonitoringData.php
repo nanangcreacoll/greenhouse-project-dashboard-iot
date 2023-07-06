@@ -9,6 +9,8 @@ class MonitoringData extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     protected $fillable = [
         'time',
         'temperature',

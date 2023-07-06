@@ -15,8 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MonitoringDataController::class, 'index']);
+Route::get('/temperature-data', [MonitoringDataController::class, 'getTemperatureData']);
+Route::get('/temperature-for-chart', [MonitoringDataController::class, 'getTemperatureForChart']);
+Route::get('/air-humidity-data', [MonitoringDataController::class, 'getAirHumidityData']);
+Route::get('/air-humidity-for-chart', [MonitoringDataController::class, 'getAirHumidityForChart']);
+Route::get('/soil-moisture-data', [MonitoringDataController::class, 'getSoilMoistureData']);
+Route::get('/soil-moisture-for-chart', [MonitoringDataController::class, 'getSoilMoistureForChart']);
+Route::get('/light-intensity-data', [MonitoringDataController::class, 'getLightIntensityData']);
+Route::get('/light-intensity-for-chart', [MonitoringDataController::class, 'getLightIntensityForChart']);
 Route::get('/all-data', [MonitoringDataController::class, 'allData']);
-Route::post('/', [MonitoringDataController::class, 'storeData']);
+Route::post('/store-data', [MonitoringDataController::class, 'storeData']);
 
 // Route::get('/', function () {
 //     return view('welcome');

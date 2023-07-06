@@ -8,6 +8,7 @@
     <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/vendor/bootstrap-5.3.0/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/sb-admin-2/css/sb-admin-2.css') }}" rel="stylesheet">
+    <link href="{{ asset('/assets/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
     <title>Coffee Greenhouse | {{ $title }}</title>
 </head>
 <body id="page-top">
@@ -31,5 +32,8 @@
     <script src="{{ asset('assets/vendor/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/sb-admin-2/js/demo/datatables-demo.js') }}"></script>
+    <script src="{{ asset('js/chart.js') }}"></script>
+    <script src="{{ asset('js/ajax.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
