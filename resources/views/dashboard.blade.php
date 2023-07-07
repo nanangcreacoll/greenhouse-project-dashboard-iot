@@ -127,7 +127,7 @@
                                 Pump 2</div>
                             <div class="h3 mb-0 font-weight-bold text-gray-500">
                                 <text id="pump2-status-data">
-                                    {{ $latestData->pump1_status == 1 ? 'ON' : 'OFF'}}
+                                    {{ $latestData->pump2_status == 1 ? 'ON' : 'OFF'}}
                                 </text>
                             </div>
                         </div>
