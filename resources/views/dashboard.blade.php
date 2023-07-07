@@ -28,7 +28,7 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text font-weight-bold text-primary text-uppercase mb-2">
+                            <div class="text font-weight-bold text-success text-uppercase mb-2">
                                 Air Humidity</div>
                             <div class="h3 mb-0 font-weight-bold text-gray-800">
                                 <text id="air-humidity-data">
@@ -47,7 +47,7 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text font-weight-bold text-primary text-uppercase mb-2">
+                            <div class="text font-weight-bold text-info text-uppercase mb-2">
                                 Soil Moisture</div>
                             <div class="h3 mb-0 font-weight-bold text-gray-800">
                                 <text id="soil-moisture-data">
@@ -66,13 +66,69 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text font-weight-bold text-primary text-uppercase mb-2">
+                            <div class="text font-weight-bold text-warning text-uppercase mb-2">
                                 Light Intensity</div>
                             <div class="h3 mb-0 font-weight-bold text-gray-800">
                                 <text id="light-intensity-data">
                                     {{ $latestData->light_intensity }}
                                 </text>
                                 <sup class="font-weight-normal">Lux</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col mb-4">
+            <div class="card border-left-secondary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text font-weight-bold text-gray-800 text-uppercase mb-2">
+                                Fan 1</div>
+                            <div class="h3 mb-0 font-weight-bold text-gray-500">
+                                <text id="fan1-status-data">
+                                    {{ $latestData->fan1_status == 1 ? 'ON' : 'OFF'}}
+                                </text>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vr"></div>
+                        </div>
+                        <div class="col mr-2">
+                            <div class="text font-weight-bold text-gray-800 text-uppercase mb-2">
+                                Fan 2</div>
+                            <div class="h3 mb-0 font-weight-bold text-gray-500">
+                                <text id="fan2-status-data">
+                                    {{ $latestData->fan2_status == 1 ? 'ON' : 'OFF'}}
+                                </text>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vr"></div>
+                        </div>
+                        <div class="col mr-2">
+                            <div class="text font-weight-bold text-gray-800 text-uppercase mb-2">
+                                Pump 1</div>
+                            <div class="h3 mb-0 font-weight-bold text-gray-500">
+                                <text id="pump1-status-data">
+                                    {{ $latestData->pump1_status == 1 ? 'ON' : 'OFF'}}
+                                </text>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vr"></div>
+                        </div>
+                        <div class="col mr-2">
+                            <div class="text font-weight-bold text-gray-800 text-uppercase mb-2">
+                                Pump 2</div>
+                            <div class="h3 mb-0 font-weight-bold text-gray-500">
+                                <text id="pump2-status-data">
+                                    {{ $latestData->pump1_status == 1 ? 'ON' : 'OFF'}}
+                                </text>
                             </div>
                         </div>
                     </div>

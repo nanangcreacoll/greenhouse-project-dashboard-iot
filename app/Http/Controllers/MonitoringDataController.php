@@ -75,6 +75,26 @@ class MonitoringDataController extends Controller
         return response()->json($lightIntensityForChart);
     }
 
+    public function getFan1StatusData() {
+        $fan1StatusData = MonitoringData::select('fan1_status')->latest('time')->first();
+        return response()->json($fan1StatusData);
+    }
+
+    public function getFan2StatusData() {
+        $fan2StatusData = MonitoringData::select('fan2_status')->latest('time')->first();
+        return response()->json($fan2StatusData);
+    }
+
+    public function getPump1StatusData() {
+        $pump1StatusData = MonitoringData::select('pump1_status')->latest('time')->first();
+        return response()->json($pump1StatusData);
+    }
+
+    public function getPump2StatusData() {
+        $pump2StatusData = MonitoringData::select('pump2_status')->latest('time')->first();
+        return response()->json($pump2StatusData);
+    }
+
     public function allData() {
         $data = $this->getAllData();
 

@@ -23,6 +23,10 @@ Route::get('/soil-moisture-data', [MonitoringDataController::class, 'getSoilMois
 Route::get('/soil-moisture-for-chart', [MonitoringDataController::class, 'getSoilMoistureForChart']);
 Route::get('/light-intensity-data', [MonitoringDataController::class, 'getLightIntensityData']);
 Route::get('/light-intensity-for-chart', [MonitoringDataController::class, 'getLightIntensityForChart']);
+Route::get('/fan1-status-data', [MonitoringDataController::class, 'getFan1StatusData']);
+Route::get('/fan2-status-data', [MonitoringDataController::class, 'getFan2StatusData']);
+Route::get('/pump1-status-data', [MonitoringDataController::class, 'getPump1StatusData']);
+Route::get('/pump2-status-data', [MonitoringDataController::class, 'getPump2StatusData']);
 Route::get('/all-data', [MonitoringDataController::class, 'allData']);
 Route::post('/store-data', [MonitoringDataController::class, 'storeData']);
 
