@@ -112,7 +112,7 @@ $(document).ready(function() {
                     function () {
                         if (response.fan1_status == 1) {
                             return "ON"
-                        } else {
+                        } else if (response.fan1_status == 0) {
                             return "OFF"
                         }
                     });
@@ -132,7 +132,7 @@ $(document).ready(function() {
                     function () {
                         if (response.fan2_status == 1) {
                             return "ON"
-                        } else {
+                        } else if (response.fan2_status == 0) {
                             return "OFF"
                         }
                     });
@@ -152,7 +152,7 @@ $(document).ready(function() {
                     function () {
                         if (response.pump1_status == 1) {
                             return "ON"
-                        } else {
+                        } else if (response.pump1_status == 0) {
                             return "OFF"
                         }
                     });
@@ -172,7 +172,7 @@ $(document).ready(function() {
                     function () {
                         if (response.pump2_status == 1) {
                             return "ON"
-                        } else {
+                        } else if (response.pump2_status == 0) {
                             return "OFF"
                         }
                     });
