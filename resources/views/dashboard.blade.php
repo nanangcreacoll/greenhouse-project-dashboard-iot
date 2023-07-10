@@ -112,7 +112,7 @@
                         </div>
                         <div class="col mr-2">
                             <div class="text font-weight-bold text-gray-800 text-uppercase mb-2">
-                                Pump 1</div>
+                                Spray Pump</div>
                             <div class="h3 mb-0 font-weight-bold text-gray-500">
                                 <text id="pump1-status-data">
                                     {{ $latestData->pump1_status == 1 ? 'ON' : 'OFF'}}
@@ -124,7 +124,7 @@
                         </div>
                         <div class="col mr-2">
                             <div class="text font-weight-bold text-gray-800 text-uppercase mb-2">
-                                Pump 2</div>
+                                Water Pump</div>
                             <div class="h3 mb-0 font-weight-bold text-gray-500">
                                 <text id="pump2-status-data">
                                     {{ $latestData->pump2_status == 1 ? 'ON' : 'OFF'}}
