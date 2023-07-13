@@ -15,6 +15,7 @@ class VerifyCsrfToken extends Middleware
         //
         'http://127.0.0.1:8000/*',
         'http://greenhouse-project.test/*',
-        'http://192.168.1.22:8000/*'
+        'http://192.168.1.22:8000/*',
+        'http://192.168.43.94:8000/*'
     ];
 }

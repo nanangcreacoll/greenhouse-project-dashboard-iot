@@ -29,7 +29,3 @@ Route::get('/pump1-status-data', [MonitoringDataController::class, 'getPump1Stat
 Route::get('/pump2-status-data', [MonitoringDataController::class, 'getPump2StatusData']);
 Route::get('/all-data', [MonitoringDataController::class, 'allData']);
 Route::post('/store-data', [MonitoringDataController::class, 'storeData']);
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
