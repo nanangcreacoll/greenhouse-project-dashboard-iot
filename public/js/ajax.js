@@ -198,5 +198,18 @@ $(document).ready(function() {
             updatePump1StatusData();
             updatePump2StatusData();
         }, 1000);
+
+        updateTemperatureData();
+        updateAirHumidityData();
+        updateSoilMoistureData();
+        updateLightIntensityData();
+        temperatureChart();
+        airHumidityChart();
+        soilMoistureChart();
+        lightIntensityChart();
+        updateFan1StatusData();
+        updateFan2StatusData();
+        updatePump1StatusData();
+        updatePump2StatusData();
     }
 });
